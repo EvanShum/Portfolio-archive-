@@ -1,0 +1,9 @@
+#include <linkbot.h>
+CLinkbotI nayr, illaoiisop;
+int x;
+printf("12-24?");
+scanf("%i", &x);
+illaoiisop.driveDistance(x, 2);
+nayr.driveDistance(-10, 2);
+nayr.driveDistance(10, 2);
+illaoiisop.driveDistance(-x, 2);
