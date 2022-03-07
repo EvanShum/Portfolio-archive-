@@ -14,6 +14,7 @@ void menu(){
         scanf("%i", &menuChoice);
     }
 }
+//intro
 void intro(){
     printf("You have woken up in a room full of darkness. You looked around and found 3 doors presented right in front of you.\n You wanted to go home and didn’t want to miss your (tv show/stream/netflix).  The doors all have a number printed on it’s\n doorknob, 1, 2, and 3. Choose which door to enter.");
     printf("Door 1, Door 2, or Door 3.\n");
@@ -23,6 +24,7 @@ void intro(){
         scanf("%i", &introChoice);
     }
 }
+//middle 1
 void middle1(){
     printf("You decided to go into door 1\n. You opened the door and you were greeted by an old merchant who was in a dirty room filled with cobwebs and dust.\n Their name was Pip and figured that you also came from the 3 door room. They said that they can help you return to your home\n with a mischievious grin and presented 3 items right in front of you that can possibly assist you in escaping.\n A horn, a mysterious colored potion, and a book. \n");
     printf("Take the horn(1), potion(2),or book(3).\n");
@@ -32,6 +34,7 @@ void middle1(){
         scanf("%i", &middleChoice1);
     }
 }
+//middle 2
 void middle2(){
     printf("You decided to go into door 2.\n You opened the door and discovered that 3 buttons were presented right in front of you. Nearby the buttons a sign read,\n “Choose wisely”. You also noticed that each button has an image etched on to it. The first button was a red square with a\n house image on it. The second button was a blue triangle with a door as it’s image. The last button was a green circle with\n a question mark as it’s image.");
     printf("\nPress the red square house button(1), the blue traingle door button(2), or the green circle button with the question mark.\n");
@@ -41,6 +44,7 @@ void middle2(){
         scanf("%i", &middleChoice2);
     }
 }
+//middle 3
 void middle3(){
     printf("You decided to go into door 3.\n When you opened door 3 a (red/blue/green) key was lying on the ground. You picked up the key and heard a deep rumble\n and 3 chests came out of the ground. The first chest is a typical brown chest. The second chest is similar to the first\n brown chest but it was…..breathing? The third chest was also a brown chest with some sort of engraved sentence on it’s flesh.\n ");
     printf("Open the typical chest(1), the breathing(?) chest(2), or the engraved chest(3).\n");
@@ -50,58 +54,69 @@ void middle3(){
         scanf("%i", &middleChoice3);
     }
 }
+//end 1
 void end1(){
     printf("You decided to use the horn. You blew on the horn and nothing happened. You looked back to the merchant only to find them not\n being there at all. You heard the ceiling crumbling and then a huge crow ripped out the entire roof. You panicked\n and attempted to avoid it’s talons but the crow managed to catch you despite your efforts. You were flying in the sky for a\n good few minutes until the crow dropped you into this ruined area. You looked around and saw a campfire with a crestfallen\n looking man sitting near. You walked over to him and asked what and where this place was.\n");
     exit (1);
 }
+//end 2
 void end2(){
     printf("You decided to drink the potion. You grabbed the potion and swigged it. You felt uneasy and looked at the merchant\n for reassurance. They were gone. Everything was fading around you. Your senses are starting to fail. You start to lose\n your sense of touch. You start to see only eternal darkness. You cannot make out the aftertaste of your potion. You couldn’t\n smell the horridness of the room.You cannot do anything. You waited for what felt like minutes, hours, days, years\n and nothing has changed. You pray that someone, anyone will come to the rescue.\n");
     exit (1);
 }
+//end 3
 void end3(){
     printf("You decided to use the book. While looking through the book, you asked the merchant if they knew what the contents of the book\n was about but you heard nothing. The merchant disappeared and left nothing behind. You realized it was a book full of spells\n and it had illustrations of what each spell does. You flipped around until you found a teleportation spell. You chanted\n the spell and a purple aura was forming around your body. You were right back at home. A huge feeling of relief washed\n over you. You decided to sit on the couch and watch what you missed.\n");
     exit (1);
 }
+//end 4
 void end4(){
     printf("You decided to press the house button. When you pressed the button, the rest of the button went into the ground leaving the\n button you pressed right in front of you. Suddenly a blue portal formed right in front of you and sucked you in. You\n realized that the portal sent you back home. With a sigh of relief you decided to make yourself at home and open the windows to get some fresh air. You opened the windows\n and took a step back in horror. There was nothing outside of your house. No other houses, no trees, no ground, no anything.\n You are alone now. With nobody else. Just you and your house. An eternal purgatory.\n");
     exit (1);
 }
+//end 5
 void end5(){
     printf("You decided to press the door button. When you pressed the button, the rest of the buttons went into the ground leaving only\n a single door that took the place of the button you pressed. You slowly opened the door and saw an entire forest below you.\n An unknown force pushed you into the door and you were sent falling. You were lucky that a very very soft bush broke your\n fall. You didn’t know where you were so you decided to explore for a bit. You traveled for what felt like for hours to\n realize that there is no end to the forest. You have no other choice but to settle here and live a new life.\n");
     exit (1);    
 }
+//end 6
 void end6(){
     printf("You decided to press the question mark button. When you pressed the button, the rest of the button went into the ground\n leaving the button you pressed right in front of you. After that nothing much really happened as you waited for the outcome\n from pressing the button. After what felt like hours, a sudden black hole showed up and sucked you in while you were\n processing what was happening and all you saw was darkness. While in the darkness a small glimmer of light was forming\n around you. More glimmers of light started to surround you and started to take over the darkness within\n the black hole. You closed your eyes from the brightness and once you uncovered them, you discovered that you were standing\n right in front of your home. With a sigh of relief you walked in and started to make yourself at home.\n");
     exit (1);
 }
+//end 7
 void end7(){
     printf("You decided to open the standard chest. You inserted the key into it’s keyhole and opened up to see its contents. Inside was\n a sword with a glowing aura. You grabbed the sword and it transported you right back to your house but was greeted with\n weird fictional monsters occupying your couch. A voice in your head said”CHOSEN ONE SAVE THE WORLD!” You slayed the enemies\n and heard screams of help from the outside. There were more enemies tormenting your neighbors. You reluctantly became a hero\n and became a universal symbol of hope.\n");
     exit (1);
 }
+//end 8
 void end8(){
     printf("You decided to open the breathing chest. You inserted the key into it’s keyhole but the chest suddenly stood up and kicked\n you, sending you into the wall. You groaned in pain and saw a horrifying figure from where you got kicked. It was the chest\n but it had long legs and a pair of arms. It opened its mouth and there was a long tongue with 3 sets of sharp teeth. It\n slowly started to walk towards you. You couldn’t move your body. You didn’t want to die. It slowly picked you up and\n devoured your entire body. The mimic went back into its initial spot and waited for it’s next prey.\n");
     exit (1);
 }
+//end 9
 void end9(){
     printf("You decided to open the chest with the engravings. You inserted the key into it’s keyhole and opened up to see its contents.\n There was a mirror with a gold frame on it. You grabbed the mirror and stared into your reflection. You thought about how\n useless it was and wanted to go home. Suddenly the mirror’s reflection displayed your house. A sentence showed on it’s\n display,” Destroy the mirror to send you to the place you wished for.” You broke the mirror in order to come back home. You\n felt the area around you changing and it transported you into a (pool/garden/kitchen) of another house? You looked around\n and realized that this is your house but you felt something was off. You looked everywhere to see what was different and\n realized that there were slight alters to your house such as your floor color. You heard somebody unlock the door and came\n inside through the front door. It was you.\n");
     exit (1);
 }
-
+//no roadmap option
 void menuChoice1(){
     printf("Have fun!\n");
 }
-
+//roadmap option
 void menuChoice2(){
     printf("Door 1 leads to a merchant with 3 items.\n A horn(1 neutral end)\n A potion(2 bad end)\n A book(3 best end)\n Door 2 leads to a room with 3 buttons.\n A red square button with a house depiction(1 bad end)\n A blue triangle button with a door depiction(2 neutral end)\n and A green circle button with a question mark depiction(3 best end)\n Door 3 leads to a room with 3 chests.\n A standard brown chest(1 best end)\n A breathing chest(2 bad end)\n A engraved chest(3 neutral end)\n");
 }
 int main(){  //main program to run (logic)
     menu();
+    //menu choices
     if(1 == menuChoice){
         menuChoice1();
     }
     if(2 == menuChoice){
         menuChoice2();
     }
+
     intro();
     if(1 == introChoice){
         middle1();
