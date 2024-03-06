@@ -1,0 +1,71 @@
+#include "vex.h"
+// ---- START VEXCODE CONFIGURED DEVICES ----
+// Robot Configuration:
+// [Name]
+// Drivetrain
+// Controller1
+// MotorGroup13
+// ---- END VEXCODE CONFIGURED DEVICES ----
+using namespace vex;
+// A global instance of competition
+competition Competition;
+// define your global instances of motors and other devices here
+void pre_auton(void) {
+// Initializing Robot Configuration. DO NOT REMOVE!
+vexcodeInit();
+// All activities that occur before the competition starts
+// Example: clearing encoders, setting servo positions, ...
+}
+ [Type]
+drivetrain
+controller
+motor_group
+[Port(s)]
+2, 10, 1, 9
+13, 15
+
+  void autonomous(void) {
+int banana = 1;
+ if(banana == 1){
+   MotorGroup13.setStopping(hold);
+   Drivetrain.driveFor(forward,1200,mm);
+   Drivetrain.turnFor(right,80,degrees);
+   MotorGroup13.spinToPosition(-871, degrees);
+   Drivetrain.driveFor(forward,650,mm);
+   Drivetrain.driveFor(reverse,700,mm);
+   Drivetrain.turnFor(left,360,degrees);
+   Drivetrain.turnFor(right,360,degrees);
+   Drivetrain.driveFor(forward,500,mm);
+ }else{
+   MotorGroup13.setStopping(hold);
+   Drivetrain.driveFor(forward,1200,mm);
+   Drivetrain.turnFor(left,80,degrees);
+   MotorGroup13.spinToPosition(-871, degrees);
+   Drivetrain.driveFor(forward,650,mm);
+   Drivetrain.driveFor(reverse,700,mm);
+   Drivetrain.turnFor(right,360,degrees);
+   Drivetrain.turnFor(left,360,degrees);
+   Drivetrain.driveFor(forward,500,mm);
+} }
+void usercontrol(void) {
+// User control code here, inside the loop
+while (1) {
+wait(20, msec); // Sleep the task for a short amount of time to
+// prevent wasted resources.
+}
+}
+
+  //
+// Main will set up the competition functions and callbacks.
+//
+int main() {
+// Set up callbacks for autonomous and driver control periods.
+Competition.autonomous(autonomous);
+Competition.drivercontrol(usercontrol);
+// Run the pre-autonomous function.
+pre_auton();
+// Prevent main from exiting with an infinite loop.
+while (true) {
+wait(100, msec);
+}
+}
